@@ -1,0 +1,29 @@
+
+
+
+{{!-- this template is there you would put your header, footer - things you want on every single page because all routes are nested here. this file has no html though for <head> <body> etc </body></head> but that's actually coming from  app/index.html --}}
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">My App</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li>{{#link-to "index"}}Home{{/link-to}}</li>
+                <li>{{#link-to "about"}}About{{/link-to}}</li>
+                <li>{{#link-to "services"}}Services{{/link-to}}</li>
+                <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+

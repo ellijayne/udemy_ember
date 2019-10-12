@@ -1,0 +1,19 @@
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ccc;
+    transition: 0.2s ease;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #86c5d8;
+}
